@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    background-color: #4CAF50;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu li:hover {
+    background-color: #45a049;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #71c475;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-input button:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-list li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.task-time {
+    font-size: 14px;
+    color: #888;
+}
+
+.task-list li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.task-list li button:hover {
+    opacity: 0.8;
+}
+
+.task-list li button:focus {
+    outline: none;
+}
+
+.complete-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #45a049;
+}
+
+.due-btn {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+.due-btn:hover {
+    background-color: #FFD700;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.save-btn {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.save-btn:hover {
+    background-color: #45a049; 
+}
+
+.task-list li.completed {
+    background-color: #d3ffd3; 
+    text-decoration: line-through;
+}
+

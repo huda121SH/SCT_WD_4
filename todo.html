@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+       
+        <aside class="sidebar">
+            <h2>Task Menu</h2>
+            <ul class="menu">
+                <li>Home</li>
+                <li>Work</li>
+                <li>Personal</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>To-Do List</h1>
+
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter your task..." />
+                <input type="datetime-local" id="taskTime" />
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <ul id="taskList" class="task-list">
+               
+            </ul>
+        </main>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
